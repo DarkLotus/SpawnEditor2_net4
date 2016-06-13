@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <!--Project was exported from assembly: Y:\Spawn Editor2 v1.8\SpawnEditor2.exe-->
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F5DC885C-E46A-4C2D-965A-D54442A2F528}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AssemblyName>SpawnEditor2</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>2.0</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.18.2133.41352</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System" />
+    <Reference Include="System.Xml" />
+    <Reference Include="AxUOMAPLib">
+      <HintPath>lib\AxUOMAPLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Data" />
+    <Reference Include="Ultima">
+      <HintPath>lib\Ultima.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Server\Engines\XmlSpawner2\ObjectData.cs" />
+    <Compile Include="Server\Engines\XmlSpawner2\TransferMessage.cs" />
+    <Compile Include="Server\Engines\XmlSpawner2\ReturnObjectData.cs" />
+    <Compile Include="Server\Engines\XmlSpawner2\GetObjectData.cs" />
+    <Compile Include="Server\Engines\XmlSpawner2\ReturnSpawnerData.cs" />
+    <Compile Include="Server\Engines\XmlSpawner2\GetSpawnerData.cs" />
+    <Compile Include="Server\Engines\XmlSpawner2\ReturnSpawnerSaveStatus.cs" />
+    <Compile Include="Server\Engines\XmlSpawner2\SaveSpawnerData.cs" />
+    <Compile Include="Server\Engines\XmlSpawner2\ReturnSpawnerUnloadStatus.cs" />
+    <Compile Include="Server\Engines\XmlSpawner2\UnloadSpawnerData.cs" />
+    <Compile Include="Server\Engines\XmlSpawner2\ReturnData.cs" />
+    <Compile Include="Server\Engines\XmlSpawner2\ErrorMessage.cs" />
+    <Compile Include="Server\Engines\XmlSpawner2\RemoteMessaging.cs" />
+    <Compile Include="Server\Engines\XmlSpawner2\ZLib.cs" />
+    <Compile Include="SpawnEditor2\AboutForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpawnEditor2\Amount.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpawnEditor2\Area.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpawnEditor2\Configure.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpawnEditor2\EntryEdit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpawnEditor2\TransferServerSettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpawnEditor2\ImportMap.cs" />
+    <Compile Include="SpawnEditor2\ImportMSF.cs" />
+    <Compile Include="SpawnEditor2\PropertyTest.cs" />
+    <Compile Include="SpawnEditor2\TransferConnection.cs" />
+    <Compile Include="SpawnEditor2\LocationTree.cs" />
+    <Compile Include="SpawnEditor2\ChildNode.cs" />
+    <Compile Include="SpawnEditor2\ParentNode.cs" />
+    <Compile Include="SpawnEditor2\MusicName.cs" />
+    <Compile Include="SpawnEditor2\Region.cs" />
+    <Compile Include="SpawnEditor2\WorldMap.cs" />
+    <Compile Include="SpawnEditor2\SpawnEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SpawnEditor2\SpawnObject.cs" />
+    <Compile Include="SpawnEditor2\SpawnPointAreaComparer.cs" />
+    <Compile Include="SpawnEditor2\SpawnPoint.cs" />
+    <Compile Include="SpawnEditor2\SpawnPointNode.cs" />
+    <Compile Include="SpawnEditor2\SpawnObjectNode.cs" />
+    <Compile Include="SpawnEditor2\RegionNode.cs" />
+    <Compile Include="SpawnEditor2\RegionFacetNode.cs" />
+    <Compile Include="SpawnEditor2\LocationNode.cs" />
+    <Compile Include="SpawnEditor2\LocationSubNode.cs" />
+    <Compile Include="SpawnEditor2\SpawnPackNode.cs" />
+    <Compile Include="SpawnEditor2\SpawnPackSubNode.cs" />
+    <Compile Include="SpawnEditor2\MapLocation.cs" />
+    <Compile Include="SpawnEditor2\Forms\SpawnerFilters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="SpawnEditor2\AboutForm.resx" />
+    <EmbeddedResource Include="SpawnEditor2\Amount.resx" />
+    <EmbeddedResource Include="SpawnEditor2\Area.resx" />
+    <EmbeddedResource Include="SpawnEditor2\Configure.resx" />
+    <EmbeddedResource Include="SpawnEditor2\EntryEdit.resx" />
+    <EmbeddedResource Include="SpawnEditor2\Forms\SpawnerFilters.resx" />
+    <EmbeddedResource Include="SpawnEditor2\SpawnEditor.resx" />
+    <EmbeddedResource Include="SpawnEditor2\TransferServerSettings.resx" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+</Project>
